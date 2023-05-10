@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="review.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- FOnt Awesome -->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+
+    <title>Review</title>
+<style>
+    
+    /* Coding With Nick */
+/* GEneral stuff */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+body{
+    font-family: 'lato', sans-serif;
+    color: #454545;
+    font-weight: 300;
+    background-color: #00acee;
+}
+a{
+    color: #333333;
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+a:hover,
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+p{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #454545;
+    font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #333333;
+    font-weight: 700;
+}
+img{
+    width: 100%;
+    height: 50%;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 5px;
+    position: relative;
+}
+.section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 32%;
+    background-color: #50c5fc;
+    bottom: -5px;
+
+}
+.container .section-title h1::before{
+    left: 30%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.column{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.team{
+    margin-bottom:30px ;
+}
+.team .team-img{
+    position: relative;
+    font-size: 0;
+    text-align: center;
+}
+.team .team-img img{
+    width: 160px;
+    height: auto;
+    border-radius: 100%;
+    border: 20px solid #f3f4fa;
+}
+
+.team .team-content{
+    padding: 80px 20px 20px 20px;
+    margin-top: -80px;
+    text-align: center;
+    background: #f3f4fa;
+    border-radius: 10px;
+}
+.team .team-content h2{
+font-size: 25px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+.team .team-content h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.team .team-content h4{
+    font-size: 16px;
+font-weight: 300;
+letter-spacing: 1px;
+font-style: italic;
+margin-bottom: 0;
+}
+.team .team-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+/* Mobile Responsive */
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    .column{
+        max-width: 50%;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .column{
+        max-width: 33.333333%;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    .column{
+        max-width: 25%;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+   
+}
+</style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="section-title">
+            <h1>Review</h1>
+        </div>
+
+        <div class="row">
+
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/saurabh.jpeg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>SAURABH KUMAR</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/mithun.jpeg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>MITHUN KUMAR</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/mohit.jpeg" alt="Team Image" style="height:225px; width:225px">
+                    </div>
+                    <div class="team-content">
+                        <h2>MOHIT RAJ</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/tabrez.jpeg" alt="Team Image" style="height:225px; width:225px">
+                    </div>
+                    <div class="team-content">
+                        <h2>TABREZ ALAM</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/gulshan.jpeg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>GULSHAN KUMAR</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/ankit.jpeg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>ANKIT KUMAR</h2>
+                        <h3>Civil ENGINEERING</h3>
+                        <p>.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="Review_image/saurabh1.jpg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>SAURABH KUMAR</h2>
+                        <h3>MECHNICAL ENGINEERING</h3>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="column">
+                <div class="team">
+                    <div class="team-img">
+                        <img src="img/team-4.jpg" alt="Team Image" style="height:200px; width:200px">
+                    </div>
+                    <div class="team-content">
+                        <h2>PRAVESH KUMAR</h2>
+                        <h3>COMPUTER SCIENCE AND ENGINEERING</h3>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#">
+        <button style="margin-left: 85%;">^Top</button>
+        </a>
+        <br>
+        <hr>
+    <center><p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by Nikhil</p></center><br>
+</body>
+
+</html>
